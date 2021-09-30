@@ -1,0 +1,15 @@
+\usepackage{caption}%调整浮动体标题的宏包
+\captionsetup{labelfont={bf,it},textfont={small,rm}}%设置标题字体的三种方式
+\captionsetup{format=plain}
+\captionsetup{labelformat=default}
+\captionsetup{labelsep=colon}
+\captionsetup{justification=justified}
+\captionsetup{skip=10pt}%设置标题与浮动体之间的垂直间距}
+\captionsetup{figurename=figure,tablename=table}%修改图表标签的名称
+
+\usepackage{bicaption}%提供两种语言的标题的宏包
+\usepackage{subcaption}%提供子标题的宏包
+\usepackage{varwidth}%解决图表并排顶部对齐的宏包
+\usepackage{float}
+
+\usepackage{picinpar}%提供绕排功能的宏包

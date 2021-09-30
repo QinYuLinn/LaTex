@@ -1,0 +1,6 @@
+\newcounter{lemma}[section]
+\usecounter{lemma}
+\setcounter{lemma}{1}
+
+\newenvironment{lemma}
+{\par\noindent\textcolor{blue}{\bfseries{Lemma \thesection.\thelemma}}\hspace{3em}\mdseries}{\stepcounter{lemma}\par\vspace{10pt}}

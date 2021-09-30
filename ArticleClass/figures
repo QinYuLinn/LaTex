@@ -1,0 +1,3 @@
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{lscape}%提供的landscape环境可以对页面进行旋转

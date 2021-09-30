@@ -1,0 +1,39 @@
+\documentclass[hyperref,a4paper,UTF-8]{ctexart}
+
+\usepackage{geometry}%设置纸张边界距离
+\geometry{left=2cm,right=2cm,top=3cm,bottom=2cm}
+
+\usepackage{fixltx2e}%修正latex2中的某些bug的宏包
+
+\usepackage{fancyhdr}%设置章节格式
+\CTEXsetup[indent=0cm,name={PART. ,},number={\Alph{part}},aftername={\quad  },format={\raggedright\bfseries}]{part}
+
+\CTEXsetup[indent=0cm,name={$\Upsilon$. ,},number={\arabic{section}},aftername={\quad  },format={\raggedright\bfseries}]{section}
+
+\CTEXsetup[indent=0cm,name={$\Re$. ,},number={\arabic{subsection}},aftername={\quad  },format={\raggedright\bfseries}]{subsection}
+
+\CTEXsetup[indent=0cm,name={$\oint$. ,},number={\arabic{subsubsection}},aftername={\quad  },format={\raggedright\bfseries}]{subsubsection}
+
+\usepackage{hyperref}
+\hypersetup%设置超链接，标签样式等
+{
+colorlinks=true,
+bookmarks=true,
+bookmarksopen=false,
+%pdfpagemode=FullScreen,
+pdfstartview=Fit,
+pdfborder=0 0 0,
+linkcolor=black,
+urlcolor=blue,
+filecolor=blue,
+citecolor=cyan
+}
+
+\bibliographystyle{plain}%设置参考文献风格,可以修改为任意的.bst文件（说明格式的文件）；
+\usepackage{natbib}%管理引用输出的宏包
+\renewcommand\bibname{References}
+\renewcommand\bibpreamble{}
+\renewcommand\bibfont{\small}
+\renewcommand\citenumfont{\itshape}
+\setcitestyle{numbers,square,semicolon,aysep={;},yysep={,},notesep={\ }}
+%还有bibnumfmt,bibhang,bibsep变量可以控制相应的格式

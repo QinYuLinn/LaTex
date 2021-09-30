@@ -1,0 +1,57 @@
+\documentclass[xcolor=table,8pt]{beamer}
+\usepackage[UTF8,noindent]{ctexcap}
+\usepackage{caption}
+\usepackage{amstext}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage[format=hang]{caption}
+
+\usepackage[numbers, sort]{natbib}%管理引用输出的宏包
+\usepackage{bibentry}
+\renewcommand{\footnotesize}{\tiny}
+\renewcommand{\thefootnote}{[\textcolor{blue}{\arabic{footnote}}]}
+\DeclareCaptionFont{kai}{\kaishu}
+\DeclareCaptionFont{hei}{\heiti}
+\captionsetup{labelfont=hei,textfont=kai}%对图表标题格式的修改，“图、表”二字黑体，图表名称楷体
+\linespread{1.4}%学院要求1.5倍行距，标准的1.5倍行距应把linespread设为1.25
+
+\usetheme{AnnArbor}
+%\useoutertheme{miniframes}
+\useinnertheme{circles}
+\usecolortheme{sidebartab}
+\usefonttheme{default}
+\setbeamercolor{structure}{fg=beamer@blendedblue}
+\setbeamercolor{titlelike}{parent=structure}
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{item}{fg=black}
+\setbeamerfont{frametitle}{size=\large}
+\setbeamertemplate{footline}[frame number]
+\newcommand\Fontvi{\fontsize{6}{7.2}\selectfont}
+
+\makeatletter
+\setbeamertemplate{frametitle}{
+    \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+    \@tempdima=\textwidth%
+    \advance\@tempdima by\beamer@leftmargin%
+    \advance\@tempdima by\beamer@rightmargin%
+    %\hspace*{0cm} %%%%%%%%%%%%% For example insert shift to right
+    \begin{beamercolorbox}[sep=0.18cm,center,wd=\the\@tempdima]{frametitle}
+        \usebeamerfont{frametitle}%
+        \vbox{}\vskip-1ex%
+        \if@tempswa\else\csname beamer@ftecenter\endcsname\fi%
+        \strut\insertframetitle\strut\par%
+        {%
+            \ifx\insertframesubtitle\@empty%
+            \else%
+            {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\strut\par}%
+            \fi
+        }%
+        \vskip-1ex%
+        \if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+    \end{beamercolorbox}%
+}
+\makeatother
+
+\setbeamersize{text margin left = 0.8cm, text margin right = 0.8cm}
+

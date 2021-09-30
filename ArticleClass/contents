@@ -1,0 +1,16 @@
+\usepackage{tocloft}
+\renewcommand\contentsname{contents}
+\renewcommand\listfigurename{figures}
+\renewcommand\listtablename{tables}
+
+\renewcommand\cfttoctitlefont{\hfil\Large\sffamily\bfseries}
+\renewcommand\cftaftertoctitle{\hfill}
+\setlength\cftbeforetoctitleskip{2ex}
+\setlength\cftaftertoctitleskip{2ex}
+
+%控制章节图表目录标题格式
+\renewcommand\cftsecfont{\large\sffamily\mdseries}
+\renewcommand\cftsecpresnum{\ }
+\renewcommand\cftsecaftersnum{\hfill}
+\renewcommand\cftdotsep{0}
+\renewcommand\cftdot{}
