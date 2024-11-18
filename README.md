@@ -1,6 +1,6 @@
 In this reposity, there are some files about the declaration about symbols and the configuration for the latex.
 
-preamble.txt is about the preloading packages which is neccessary for a tex documanetation.
+preamble.txt is about the preloading packages which is neccessary for a tex documentation.
 
 title.txt is the configuration for the title part
 
